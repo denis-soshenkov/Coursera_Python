@@ -1,5 +1,6 @@
+import math as m
 N = int(input())
-k = 0
-while 2 ** k < N:
-    k = k + 1
-print(k)
+if m.log2(N) % 1 == 0:
+    print('YES')
+else:
+    print('NO')
